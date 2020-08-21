@@ -64,7 +64,7 @@ export default {
         const newTodo = {
           id: this.createNewId(),
           title: this.title,
-          inputs: this.inputsg
+          inputs: this.inputs
         };
         this.$emit("add-todo", newTodo);
         this.title = "";
@@ -81,7 +81,7 @@ export default {
     pushInput() {
       this.inputs.push({
         id: this.inputs.length + 1,
-        label: this.inputs.length + 1,
+        label: "" + (this.inputs.length + 1),
         text: "",
         completed: false
       });
